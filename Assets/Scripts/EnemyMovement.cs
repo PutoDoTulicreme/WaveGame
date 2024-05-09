@@ -24,7 +24,7 @@ public class EnemyMovement : MonoBehaviour
         // Update the timer
         directionChangeTimer -= Time.deltaTime;
 
-        if (directionChangeTimer <= 0f)
+        if(directionChangeTimer <= 0f)
         {
             SetRandomDirection(); // Change direction when the timer runs out
             directionChangeTimer = changeDirectionInterval; // Reset the timer
