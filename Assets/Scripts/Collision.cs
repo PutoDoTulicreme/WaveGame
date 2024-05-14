@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class Collision : MonoBehaviour
 {
+    private PlayerScore playerScore; // Referência ao script que controla a pontuação do jogador
     // Start is called before the first frame update
     void Start()
     {
-        
+     playerScore = FindObjectOfType<PlayerScore>();    
     }
 
     // Update is called once per frame
@@ -16,11 +17,14 @@ public class Collision : MonoBehaviour
         
     }
 
-    void OnCollisionEnter2D ( Collision2D col){
+    void OnCollisionEnter2D (Collision2D col){
         if(col.gameObject.tag.Equals("Bullet")){
-
             Destroy (col.gameObject);
             Destroy (gameObject);
         }
+        else if (col.gameObject.tag.Equals("Player"))
+        {
+            playerScore.ReducePoints();
+        } 
     }
 }

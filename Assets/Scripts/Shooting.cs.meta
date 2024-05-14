@@ -3,7 +3,10 @@ guid: 60166990c25995547ab1440490b95327
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - mainCam: {fileID: 7656876507476942397, guid: e30dcf92579f6e048b4c7d6d3b6348aa, type: 3}
+  - bullet: {fileID: 5985960293955424941, guid: 18c3637a2cd42034fabe3a129463b17b, type: 3}
+  - bulletTransform: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

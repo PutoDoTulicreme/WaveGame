@@ -51,7 +51,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy: {fileID: 5222306770728523113}
   moveSpeed: 5
-  changeDirectionInterval: 2
+  changeDirectionInterval: 1
+  difficulty: 0.3
 --- !u!212 &5222306770728523030
 SpriteRenderer:
   m_ObjectHideFlags: 0
